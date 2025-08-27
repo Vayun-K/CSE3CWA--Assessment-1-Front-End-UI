@@ -1,0 +1,16 @@
+/* Default for SSR so links are blue before JS runs; ClientShell will override this var per theme */
+:root {
+  --link-color: #2563eb; /* blue */
+}
+
+/* Make all anchors (including visited) use our themed color globally */
+a,
+a:visited {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* Optional, subtle affordance */
+a:hover {
+  text-decoration: underline;
+}
